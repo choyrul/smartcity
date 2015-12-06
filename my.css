@@ -1,22 +1,22 @@
 .container-fluid{
 
-                padding-left: 0px;
-                padding-right: 0px
+	padding-left: 0px;
+	padding-right: 0px
 
-            }
-            .footer{
-                background-color:#ff0000;
-                padding-left: 0px;
-                padding-right: 0px
+}
+.footer{
+	background-color:#ff0000;
+	padding-left: 0px;
+	padding-right: 0px
 
-            }
-            .navbar-default{
-                background-color:#00CCFF;
+}
+.navbar-default{
+	background-color:#00CCFF;
 
-            }
-            h1 {
-                padding-left:5%
-            }
+}
+h1 {
+	padding-left:5%
+}
 
 .header{
 	position: absolute;
@@ -31,7 +31,7 @@
 .btn{
 	margin-top: 10px;
 	margin-left: 10px;
-	font-size: size: 30px;
+	font-size: 30px;
 	height:28px;
 
 }
