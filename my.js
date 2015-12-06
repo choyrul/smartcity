@@ -53,15 +53,15 @@ function init() {
 	
 	var allMark ={};
 	$('#rumah').click(function () {
-		allMark.rumah?'':loadMarkers('rumah','map-icon-real-estate-agency');
+		allMark.rumah?'':loadMarkers('rumah');
 		toggleMarker('rumah');
 	});
 	$('#pendidikan').click(function () {
-		allMark.pendidikan?'':loadMarkers('pendidikan','map-icon-university');
+		allMark.pendidikan?'':loadMarkers('pendidikan');
 		toggleMarker('pendidikan');
 	});
 	$('#kesehatan').click(function () {
-		allMark.kesehatan?'':loadMarkers('kesehatan','map-icon-hospital');
+		allMark.kesehatan?'':loadMarkers('kesehatan');
 		toggleMarker('kesehatan');
 	});
 	function loadMarkers(q,ico){
@@ -71,15 +71,7 @@ function init() {
 				allMark[q][i] =peta.addMarker({
 					lat: data[i].latitude,
 					lng: data[i].longtitude,
-					title: data[i].nama,
-					icon:{
-						path: MAP_PIN,
-						fillColor: '#00CCBB',
-						fillOpacity: 1,
-						strokeColor: '',
-						strokeWeight: 0
-					},
-					map_icon_label: '<span class="map-icon map-icon-university"></span>'
+					title: data[i].nama
 				});
 			}
 		});
